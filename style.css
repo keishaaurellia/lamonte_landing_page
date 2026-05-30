@@ -308,18 +308,6 @@ body {
   min-height: 450px;
 }
 
-.yellow-circle {
-  position: absolute;
-  width: 380px;
-  height: 380px;
-  background-color: var(--color-yellow);
-  border-radius: 50%;
-  left: 5%;
-  z-index: 1;
-  
-  animation: gentlePulse 6s ease-in-out infinite alternate;
-}
-
 .kids-image-wrapper {
   position: relative;
   z-index: 3;
@@ -1011,11 +999,6 @@ body {
     min-height: 380px;
   }
 
-  .yellow-circle {
-    width: 320px;
-    height: 320px;
-  }
-
   .kids-image-wrapper {
     max-width: 360px;
     margin-left: 0;
@@ -1116,11 +1099,6 @@ body {
   .hero-subtitle {
     font-size: 1.1rem;
     margin: 0 auto;
-  }
-
-  .yellow-circle {
-    width: 250px;
-    height: 250px;
   }
 
   .kids-image-wrapper {
