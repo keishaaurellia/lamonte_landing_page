@@ -2826,3 +2826,64 @@ body {
     transform: translateY(-10px);
   }
 }
+
+/* ==========================================================================
+   Floating WhatsApp Button
+   ========================================================================== */
+.floating-wa-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.floating-wa-bubble {
+  background-color: var(--color-white);
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+  white-space: nowrap;
+  animation: pulse-bubble 2s infinite alternate;
+  position: relative;
+}
+
+.floating-wa-bubble strong {
+  color: #0f172a;
+}
+
+.floating-wa-btn {
+  background-color: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.floating-wa-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  color: white;
+}
+
+@keyframes pulse-bubble {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+@media (max-width: 768px) {
+  .floating-wa-bubble {
+    display: none; /* Hide text bubble on mobile to save space */
+  }
+}
