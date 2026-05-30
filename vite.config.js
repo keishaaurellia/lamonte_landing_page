@@ -12,7 +12,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about.html'),
-        articles: resolve(__dirname, 'articles.html')
+        articles: resolve(__dirname, 'articles.html'),
+        gallery: resolve(__dirname, 'gallery.html'),
+        careers: resolve(__dirname, 'careers.html')
       }
     }
   }
