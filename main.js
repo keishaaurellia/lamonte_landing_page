@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initVMSlider();
   initDeliverySlider();
   initEmployeeSlider();
+  initFAQAccordion();
 });
+
 
 function initMobileMenu() {
   const toggleBtn = document.getElementById('mobile-toggle');
@@ -319,3 +321,38 @@ function initEmployeeSlider() {
     showSlide(newSlide);
   });
 }
+
+function initFAQAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (faqItems.length === 0) return;
+
+  faqItems.forEach(item => {
+    const btn = item.querySelector('.faq-question-btn');
+    const answerWrapper = item.querySelector('.faq-answer-wrapper');
+    
+    if (!btn || !answerWrapper) return;
+    
+    btn.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      
+      faqItems.forEach(otherItem => {
+        otherItem.classList.remove('active');
+        const otherWrapper = otherItem.querySelector('.faq-answer-wrapper');
+        if (otherWrapper) otherWrapper.style.maxHeight = '0';
+      });
+      
+      if (!isActive) {
+        item.classList.add('active');
+        answerWrapper.style.maxHeight = `${answerWrapper.scrollHeight}px`;
+      } else {
+        item.classList.remove('active');
+        answerWrapper.style.maxHeight = '0';
+      }
+    });
+    
+    if (item.classList.contains('active')) {
+      answerWrapper.style.maxHeight = `${answerWrapper.scrollHeight}px`;
+    }
+  });
+}
+

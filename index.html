@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
   <!-- Font Awesome for UI icons -->
@@ -28,10 +28,7 @@
 
 <body>
 
-  <div class="bg-decor bubble-1"></div>
-  <div class="bg-decor bubble-2"></div>
-  <div class="bg-decor cloud-1"><i class="fa-solid fa-cloud"></i></div>
-  <div class="bg-decor cloud-2"><i class="fa-solid fa-cloud"></i></div>
+
 
   <!-- HEADER / NAVBAR -->
   <header class="navbar-container">
@@ -46,9 +43,11 @@
 
       <!-- Navigation Menu Links -->
       <nav class="nav-menu" id="nav-menu">
-        <a href="#" class="nav-link active">Home</a>
-        <a href="#delivery" class="nav-link">Delivery</a>
+        <a href="index.html" class="nav-link active">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="articles.html" class="nav-link">Articles</a>
+        <a href="careers.html" class="nav-link">Careers</a>
         <a href="https://wa.me/6282111135519?text=Halo%20Lamonte%20Kids,%20saya%20ingin%20bertanya%20tentang%20kemitraan%20baju%20anak."
           target="_blank" rel="noopener noreferrer" class="nav-cta-btn">Contact Us</a>
       </nav>
@@ -58,159 +57,85 @@
   <!-- MAIN CONTENT -->
   <main>
 
-    <!-- HERO INTRO SECTION -->
-    <section class="hero-intro-section max-width-container">
-      <div class="hero-intro-content">
-        <h1 class="hero-title animate-reveal" data-delay="300">
-          <span class="text-green-heading">We are a retail fashion company,</span> <span
-            class="text-orange-heading">that presents unique and quality designs for children's clothing.</span>
-        </h1>
-        <p class="hero-subtitle animate-reveal" data-delay="500">
-          Bringing <span class="txt-rotate" id="text-rotator">quality</span> to children's fashion.
-        </p>
-      </div>
-    </section>
-
-    <!-- HERO SHOWCASE SECTION (OVERLAP LAYOUT) -->
-    <section class="hero-showcase-section">
-      <div class="showcase-container max-width-container">
-
-        <div class="showcase-graphics">
-
-          <!-- Main Kids Image (Group 3.png) -->
-          <div class="kids-image-wrapper">
-            <img src="Images/Group 3.png" alt="Lamonte Kids Fashion" class="kids-image">
-          </div>
-        </div>
-
-        <div class="green-banner-card">
-          <div class="banner-inner-content">
-            <p>
-              <strong>PT Lamonte Mode Internasional</strong> provides <strong>trendy</strong> and
-              <strong>affordable</strong> children's fashion, committed to <strong>quality products</strong> and
-              <strong>excellent customer service</strong>.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FEATURES / ADVANTAGES SECTION -->
-    <section class="features-section">
-      <div class="features-marquee-container">
-        <div class="features-track">
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <img src="Images/growth.png" alt="Fashion Trends Icon" class="feature-icon">
-            </div>
-            <h3 class="feature-title">Fashion Trends</h3>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <img src="Images/best-seller.png" alt="Quality Products Icon" class="feature-icon">
-            </div>
-            <h3 class="feature-title">Quality Products</h3>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <img src="Images/best-price.png" alt="Best Price Icon" class="feature-icon">
-            </div>
-            <h3 class="feature-title">Best Price</h3>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <img src="Images/loyal-customer.png" alt="Best Service Icon" class="feature-icon">
-            </div>
-            <h3 class="feature-title">Best Service</h3>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <img src="Images/building.png" alt="Own Factory Icon" class="feature-icon">
-            </div>
-            <h3 class="feature-title">Own Factory</h3>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <img src="Images/growth.png" alt="Fashion Trends Icon" class="feature-icon">
-            </div>
-            <h3 class="feature-title">Fashion Trends</h3>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <img src="Images/best-seller.png" alt="Quality Products Icon" class="feature-icon">
-            </div>
-            <h3 class="feature-title">Quality Products</h3>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <img src="Images/best-price.png" alt="Best Price Icon" class="feature-icon">
-            </div>
-            <h3 class="feature-title">Best Price</h3>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <img src="Images/loyal-customer.png" alt="Best Service Icon" class="feature-icon">
-            </div>
-            <h3 class="feature-title">Best Service</h3>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <img src="Images/building.png" alt="Own Factory Icon" class="feature-icon">
-            </div>
-            <h3 class="feature-title">Own Factory</h3>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- DELIVERY SECTION -->
-    <section class="delivery-section max-width-container" id="delivery">
-      <div class="delivery-grid">
-
-        <div class="delivery-content-column animate-reveal" data-delay="100">
-          <h2 class="delivery-main-title">Delivery</h2>
-          <p class="delivery-sub-title">
-            Ensuring your products arrive safely and on time.
+    <!-- PREMIUM HERO SECTION -->
+    <section class="premium-hero-section">
+      <div class="premium-hero-bg"></div>
+      <div class="max-width-container premium-hero-container">
+        
+        <div class="premium-hero-text animate-reveal" data-delay="100">
+          <span class="premium-badge">Established 2011</span>
+          <h1 class="premium-hero-title">
+            Defining Excellence in <br>
+            <span class="text-gold">Children's Apparel</span>
+          </h1>
+          <p class="premium-hero-subtitle">
+            PT Lamonte Mode Internasional is a leading B2B wholesale manufacturer and distributor, committed to delivering high-quality, trendy, and affordable children's clothing nationwide.
           </p>
+          <div class="premium-hero-actions">
+            <a href="#calculator" class="premium-btn primary">Start Partnership</a>
+            <a href="about.html" class="premium-btn secondary">Discover Our Story</a>
+          </div>
         </div>
 
-        <div class="delivery-slider-column animate-reveal" data-delay="300">
-          <div class="delivery-slider-wrapper">
-
-            <div class="delivery-image-outer">
-              <div class="delivery-image-container" id="delivery-image-container">
-                <img src="Images/Distribusi-barang-2.jpg" alt="Distribusi Barang Lamonte Kids"
-                  class="delivery-slide-img">
-                <img src="Images/Pengiriman-3.jpg" alt="Pengiriman Barang Lamonte Kids" class="delivery-slide-img">
+        <div class="premium-hero-visual animate-reveal" data-delay="300">
+          <div class="premium-image-frame">
+            <img src="Images/Group 3.png" alt="Lamonte Quality Apparel" class="premium-hero-img">
+            <div class="premium-glass-card">
+              <div class="glass-icon"><i class="fa-solid fa-gem"></i></div>
+              <div class="glass-text">
+                <span class="glass-val">10+ Years</span>
+                <span class="glass-lbl">Industry Experience</span>
               </div>
             </div>
-
-            <div class="delivery-nav-controls">
-              <button class="delivery-nav-btn prev" id="delivery-prev-btn" aria-label="Previous Slide">
-                <i class="fa-solid fa-arrow-left"></i>
-              </button>
-              <button class="delivery-nav-btn next" id="delivery-next-btn" aria-label="Next Slide">
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-
           </div>
         </div>
 
       </div>
     </section>
+
+    <!-- BENTO GRID FEATURES SECTION -->
+    <section class="premium-features-section max-width-container">
+      <div class="features-header animate-reveal" data-delay="100">
+        <h2 class="section-title">Our Competitive Advantage</h2>
+        <p class="section-subtitle">Why industry leaders choose to partner with us.</p>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-item bento-large animate-reveal" data-delay="200">
+          <div class="bento-content">
+            <i class="fa-solid fa-industry bento-icon"></i>
+            <h3>Direct Manufacturer</h3>
+            <p>Operating our own factories allows us to maintain strict quality control and offer the most competitive wholesale prices.</p>
+          </div>
+        </div>
+        
+        <div class="bento-item bento-tall animate-reveal" data-delay="300">
+          <div class="bento-content">
+            <i class="fa-solid fa-chart-line bento-icon"></i>
+            <h3>Trend Forecasting</h3>
+            <p>Our dedicated design team consistently researches global trends to ensure our collections remain highly marketable.</p>
+          </div>
+        </div>
+
+        <div class="bento-item animate-reveal" data-delay="400">
+          <div class="bento-content">
+            <i class="fa-solid fa-medal bento-icon"></i>
+            <h3>Premium Quality</h3>
+            <p>Uncompromising materials tailored for sensitive skin.</p>
+          </div>
+        </div>
+
+        <div class="bento-item animate-reveal" data-delay="500">
+          <div class="bento-content">
+            <i class="fa-solid fa-handshake bento-icon"></i>
+            <h3>Dedicated Support</h3>
+            <p>Comprehensive B2B assistance for all our partners.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- TRUST STATS SECTION -->
     <section class="trust-stats-section">
@@ -243,26 +168,264 @@
       </div>
     </section>
 
-    <!-- SUCCESS CTA SECTION -->
-    <section class="success-section" id="gallery">
-      <div class="success-container max-width-container">
-        <div class="success-text-wrapper">
-          <h2 class="success-title">
-            Achieve Success with<br>PT Lamonte Mode Internasional
-          </h2>
+    <!-- PARTNERSHIP SCHEME SECTION -->
+    <section class="partnership-section max-width-container" id="partnership">
+      <div class="features-header animate-reveal" data-delay="100">
+        <h2 class="section-title">Distributor Partnership Scheme</h2>
+        <p class="section-subtitle">Exclusive tiers designed to accelerate your wholesale business.</p>
+      </div>
+
+      <div class="pricing-cards">
+        
+        <!-- SILVER TIER -->
+        <div class="tier-card silver animate-reveal" data-delay="200">
+          <div class="tier-header">
+            <span class="tier-badge">Entry</span>
+            <h3 class="tier-name">SILVER</h3>
+            <div class="tier-discount">25% <span>Discount</span></div>
+          </div>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-check"></i> Syarat Pembelian: <strong>50 - 199 Lusin/Bulan</strong></li>
+            <li><i class="fa-solid fa-check"></i> Akses Katalog Premium</li>
+          </ul>
         </div>
 
-        <div class="success-graphics-wrapper">
+        <!-- GOLD TIER -->
+        <div class="tier-card gold animate-reveal" data-delay="300">
+          <div class="tier-header">
+            <span class="tier-badge popular">Most Popular</span>
+            <h3 class="tier-name">GOLD</h3>
+            <div class="tier-discount">30% <span>Discount</span></div>
+          </div>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-check"></i> Syarat Pembelian: <strong>200 - 499 Lusin/Bulan</strong></li>
+            <li><i class="fa-solid fa-check"></i> Prioritas Pengiriman</li>
+          </ul>
+        </div>
 
-          <img src="Images/star-struck_1f929.png" alt="Star Struck" class="emoji-star-struck">
+        <!-- PLATINUM TIER -->
+        <div class="tier-card platinum animate-reveal" data-delay="400">
+          <div class="tier-header">
+            <span class="tier-badge">VIP</span>
+            <h3 class="tier-name">PLATINUM</h3>
+            <div class="tier-discount">35% <span>Discount</span></div>
+          </div>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-check"></i> Syarat Pembelian: <strong>500+ Lusin/Bulan</strong></li>
+            <li><i class="fa-solid fa-check"></i> VIP Dedicated Account Manager</li>
+          </ul>
+        </div>
 
-          <img src="Images/partying-face_1f973.png" alt="Partying Face" class="emoji-partying-face">
+      </div>
 
-          <img src="Images/raising-hands_light-skin-tone_1f64c-1f3fb_1f3fb.png" alt="Raising Hands"
-            class="emoji-raising-hands">
+      <!-- COMPARISON TABLE -->
+      <div class="comparison-container animate-reveal" data-delay="500">
+        <h3 class="comparison-title">Distributor vs Regular Partnership</h3>
+        <div class="table-responsive">
+          <table class="corporate-table">
+            <thead>
+              <tr>
+                <th>Item / Benefit</th>
+                <th>Penawaran Mitra Distributor</th>
+                <th>Penawaran Reguler</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="fa-solid fa-tags"></i> Harga Beli</td>
+                <td class="highlight-cell"><i class="fa-solid fa-check-circle text-green"></i> Diskon 25% jauh dari harga pasar</td>
+                <td>Harga normal</td>
+              </tr>
+              <tr>
+                <td><i class="fa-solid fa-box"></i> Min. Order Pertama</td>
+                <td class="highlight-cell"><i class="fa-solid fa-check-circle text-green"></i> 100 Lusin</td>
+                <td>200 Lusin</td>
+              </tr>
+              <tr>
+                <td><i class="fa-solid fa-bullseye"></i> Target / Bulan</td>
+                <td class="highlight-cell"><i class="fa-solid fa-check-circle text-green"></i> 150 Lusin</td>
+                <td>300 Lusin</td>
+              </tr>
+              <tr>
+                <td><i class="fa-solid fa-credit-card"></i> Sistem Pembayaran</td>
+                <td class="highlight-cell"><i class="fa-solid fa-check-circle text-green"></i> DP 30%, Pelunasan 30 hari</td>
+                <td>100% di muka / Pembayaran tunai</td>
+              </tr>
+              <tr>
+                <td><i class="fa-solid fa-map-location-dot"></i> Area Eksklusif</td>
+                <td class="highlight-cell"><i class="fa-solid fa-check-circle text-green"></i> 1 Distributor / Kota</td>
+                <td><i class="fa-solid fa-xmark text-red"></i> Tidak ada</td>
+              </tr>
+              <tr>
+                <td><i class="fa-solid fa-rotate-left"></i> Garansi Retur</td>
+                <td class="highlight-cell"><i class="fa-solid fa-check-circle text-green"></i> Barang slow moving bisa retur 10%</td>
+                <td><i class="fa-solid fa-xmark text-red"></i> Tidak ada</td>
+              </tr>
+              <tr>
+                <td><i class="fa-solid fa-graduation-cap"></i> Training & Support</td>
+                <td class="highlight-cell"><i class="fa-solid fa-check-circle text-green"></i> Free training tim sales 1x & dibantu iklan digital</td>
+                <td><i class="fa-solid fa-xmark text-red"></i> Tidak ada</td>
+              </tr>
+              <tr>
+                <td><i class="fa-solid fa-users"></i> Referral dari Mitra Aktif</td>
+                <td class="highlight-cell"><i class="fa-solid fa-check-circle text-green"></i> Bonus Rp 750.000</td>
+                <td>Bonus Rp 250.000</td>
+              </tr>
+              <tr>
+                <td><i class="fa-solid fa-plane"></i> Bonus Tahunan</td>
+                <td class="highlight-cell"><i class="fa-solid fa-check-circle text-green"></i> Reward Trip ke Singapore (2H 1M)</td>
+                <td>Reward Rp 1.000.000</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
+
+    <!-- B2B PROFIT CALCULATOR SECTION -->
+    <section class="calculator-section" id="calculator">
+      <div class="calculator-container max-width-container">
+        <div class="calculator-grid">
+          
+          <!-- Column 1: Info & Controls -->
+          <div class="calc-info-col animate-reveal" data-delay="100">
+            <span class="calc-tagline">B2B Partnership</span>
+            <h2 class="calc-title">Simulasi Kemitraan & Keuntungan</h2>
+            <p class="calc-desc">
+              Gunakan kalkulator interaktif ini untuk memperkirakan keuntungan usaha grosir pakaian anak bersama PT Lamonte Mode Internasional. Tentukan modal awal dan harga jual eceran Anda.
+            </p>
+            
+            <div class="calc-controls">
+              <div class="control-group">
+                <label for="package-slider" class="control-label">
+                  <span>Modal Awal (Kapital):</span>
+                  <strong id="current-capital-display">Rp 3.000.000</strong>
+                </label>
+                <input type="range" id="package-slider" min="1000000" max="25000000" step="500000" value="3000000" class="range-slider">
+                <div class="range-labels">
+                  <span>Rp 1 Juta</span>
+                  <span>Rp 25 Juta</span>
+                </div>
+              </div>
+              
+              <div class="control-group">
+                <label for="resell-price" class="control-label">Estimasi Harga Jual Eceran per Pcs (Rp):</label>
+                <div class="price-input-wrapper">
+                  <span class="price-prefix">Rp</span>
+                  <input type="number" id="resell-price" value="35000" min="19000" max="100000" step="1000" class="price-input">
+                </div>
+                <span class="price-hint">*Modal pokok rata-rata Rp 18.000 per pcs.</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Column 2: Result Card -->
+          <div class="calc-result-col animate-reveal" data-delay="300">
+            <div class="calc-result-card">
+              <h3 class="card-title">Proyeksi Keuntungan</h3>
+              
+              <div class="result-stats">
+                <div class="result-stat-item">
+                  <span class="result-stat-lbl">Estimasi Baju Didapat</span>
+                  <span class="result-stat-val" id="pcs-result">0 Pcs</span>
+                </div>
+                
+                <div class="result-stat-item">
+                  <span class="result-stat-lbl">Estimasi Keuntungan Bersih</span>
+                  <span class="result-stat-val profit-val" id="profit-result">Rp 0</span>
+                </div>
+                
+                <div class="result-stat-item">
+                  <span class="result-stat-lbl">Estimasi Balik Modal (ROI)</span>
+                  <span class="result-stat-val roi-val" id="roi-result">0%</span>
+                </div>
+              </div>
+              
+              <a href="https://wa.me/6282111135519?text=Halo%20Lamonte%20Kids,%20saya%20tertarik%20untuk%20bergabung%20menjadi%20mitra%20reseller%20setelah%20mencoba%20simulasi%20keuntungan." target="_blank" rel="noopener noreferrer" class="calc-cta-btn">
+                Gabung Kemitraan Sekarang <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="faq-section" id="faq">
+      <div class="faq-container max-width-container">
+        <div class="faq-header animate-reveal" data-delay="100">
+          <span class="faq-tagline">Pertanyaan Umum</span>
+          <h2 class="faq-main-title">Frequently Asked Questions</h2>
+        </div>
+        
+        <div class="faq-list animate-reveal" data-delay="200">
+          
+          <div class="faq-item active">
+            <button class="faq-question-btn">
+              <span>Bagaimana cara memulai kemitraan dengan PT Lamonte Mode Internasional?</span>
+              <span class="faq-icon-wrapper"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <p>Anda dapat memulainya dengan memilih paket grosir kami melalui WhatsApp resmi kami. Caranya cukup klik tombol "Contact Us" atau tombol kemitraan di website ini untuk terhubung langsung dengan sales Executive kami.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Apakah ada batas minimum pembelian untuk reseller?</span>
+              <span class="faq-icon-wrapper"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <p>Untuk mendapatkan harga grosir terbaik dari pabrik tangan pertama, kami menerapkan batas minimum pembelian awal yang sangat terjangkau, yaitu mulai dari Rp 1.000.000 saja. Anda sudah mendapatkan variasi model dan ukuran pakaian anak premium.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Di mana kantor dan gudang utama PT Lamonte Mode Internasional?</span>
+              <span class="faq-icon-wrapper"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <p>Kantor pusat dan showroom kami terletak di Jalan Hayam Wuruk No. 111 ZC, Kel. Maphar, Kec. Taman Sari, Jakarta Barat. Gudang distribusi utama kami siap mengirimkan pasokan produk ke seluruh penjuru Indonesia.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Ekspedisi apa saja yang didukung untuk pengiriman barang?</span>
+              <span class="faq-icon-wrapper"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <p>Kami bekerja sama dengan berbagai ekspedisi pengiriman resmi terpercaya seperti JNE, J&T Express, SiCepat, Wahana, Dakota Cargo, serta kargo khusus lainnya sesuai dengan permintaan dan lokasi kenyamanan mitra kami.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Apakah barang yang rusak atau cacat produksi bisa diretur?</span>
+              <span class="faq-icon-wrapper"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <p>Ya. Sebagai komitmen layanan kami terhadap kualitas produk, kami menerima retur barang jika ditemukan cacat produksi atau kerusakan fisik saat barang tiba. Klaim garansi retur dapat diajukan dalam waktu maksimal 3 hari sejak barang diterima dengan melampirkan video unboxing.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
 
   </main>
 
